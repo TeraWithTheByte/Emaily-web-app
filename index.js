@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const keys = require('config\\keys');
+const keys = require('.\\config\\keys');
 /*Notice below that User must be required BEFORE passport*/
 require('.\\models\\User'); //defines the 'users' collection
 require('.\\services\\passport'); //invokes the 'users' collection
