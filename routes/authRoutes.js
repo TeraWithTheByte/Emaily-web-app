@@ -1,4 +1,4 @@
-//route handlers regarding authentication file
+//route handlers regarding authentication 
 const passport = require('passport');
 
 module.exports = (app) => {
