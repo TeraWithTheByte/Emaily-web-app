@@ -23,8 +23,10 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-//execute the arrow func exported in authRoutes.js
+
 //require(path.join('.', 'routes', 'authRoutes'))(app);
+
+//execute the arrow func exported in authRoutes.js
 require('./routes/authRoutes')(app);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
